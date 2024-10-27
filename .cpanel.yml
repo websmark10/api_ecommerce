@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/babyscho/api.practicaja.com/
+    - /bin/rsync -av --exclude 'index.php' public/  $DEPLOYPATH
